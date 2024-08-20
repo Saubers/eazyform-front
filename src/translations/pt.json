@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Análise de Dados com IA Poderosa",
+    "description": "Desbloqueie o poder dos dados com insights impulsionados por IA para aumentar sua produtividade.",
+    "button": "Começar"
+  },
+  "home": {
+    "key_features": "Principais Recursos",
+    "real_time_processing_title": "Processamento de Dados em Tempo Real",
+    "real_time_processing_text": "Analise seus dados instantaneamente e obtenha insights acionáveis para melhorar seu negócio.",
+    "custom_dashboards_title": "Painéis Personalizáveis",
+    "custom_dashboards_text": "Crie painéis dinâmicos e personalizados adaptados às suas necessidades.",
+    "ai_predictions_title": "Previsões de IA",
+    "ai_predictions_text": "Aproveite a IA para prever tendências e tomar decisões baseadas em dados mais rapidamente.",
+    "footer_copyright": "© 2024 AI Data Analytics. Todos os direitos reservados.",
+    "footer_privacy_policy": "Política de Privacidade",
+    "footer_terms_service": "Termos de Serviço"
+  }
+}

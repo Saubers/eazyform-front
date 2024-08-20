@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Powerful AI Data Analytics",
+    "description": "Unlock the power of data with AI-driven insights to boost your productivity.",
+    "button": "Get Started"
+  },
+  "home": {
+    "key_features": "Key Features",
+    "real_time_processing_title": "Real-time Data Processing",
+    "real_time_processing_text": "Analyze your data instantly and get actionable insights to improve your business.",
+    "custom_dashboards_title": "Customizable Dashboards",
+    "custom_dashboards_text": "Create dynamic and personalized dashboards tailored to your needs.",
+    "ai_predictions_title": "AI Predictions",
+    "ai_predictions_text": "Harness AI to predict trends and make data-driven decisions faster than ever.",
+    "footer_copyright": "© 2024 AI Data Analytics. All rights reserved.",
+    "footer_privacy_policy": "Privacy Policy",
+    "footer_terms_service": "Terms of Service"
+  }
+}
