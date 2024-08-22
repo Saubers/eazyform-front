@@ -15,5 +15,17 @@
     "footer_copyright": "© 2024 AI Data Analytics. All rights reserved.",
     "footer_privacy_policy": "Privacy Policy",
     "footer_terms_service": "Terms of Service"
-  }
+  },
+    "navbar": {
+      "brand": "AI Data Analytics",
+      "tools": "Tools",
+      "pricing": "Pricing",
+      "signup": "Sign Up"
+    },
+    "tools": {
+      "tool1": "Tool 1",
+      "tool2": "Tool 2",
+      "tool3": "Tool 3",
+      "all": "All Tools"
+    }
 }

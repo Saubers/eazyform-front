@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import englandFlag from '../assets/england_flag.png';
 import spainFlag from '../assets/spain_flag.png';
 import portugalFlag from '../assets/portugal_flag.png';
+import { boneWhite, marineBlue, mintGreen } from '../constants/colors';
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
@@ -24,7 +25,7 @@ const LanguageSelector = () => {
     <DropdownButton
       id="dropdown-language-selector"
       title={
-        <span>
+        <span style={{ color: boneWhite }}>
           <img
             src={currentLanguage.flag}
             alt={currentLanguage.label}
@@ -35,9 +36,17 @@ const LanguageSelector = () => {
           {currentLanguage.label}
         </span>
       }
-      variant="outline-primary"
+      variant="outline-dark"
+      style={{
+        borderRadius: '10px',
+        backgroundColor: mintGreen,
+        borderColor: mintGreen,
+      }}
     >
-      <Dropdown.Item onClick={() => changeLanguage('en', 'English', englandFlag)}>
+      <Dropdown.Item
+        onClick={() => changeLanguage('en', 'English', englandFlag)}
+        style={{ color: marineBlue }}
+      >
         <img
           src={englandFlag}
           alt="English"
@@ -47,7 +56,10 @@ const LanguageSelector = () => {
         />
         English
       </Dropdown.Item>
-      <Dropdown.Item onClick={() => changeLanguage('es', 'Español', spainFlag)}>
+      <Dropdown.Item
+        onClick={() => changeLanguage('es', 'Español', spainFlag)}
+        style={{ color: marineBlue }}
+      >
         <img
           src={spainFlag}
           alt="Español"
@@ -57,7 +69,10 @@ const LanguageSelector = () => {
         />
         Español
       </Dropdown.Item>
-      <Dropdown.Item onClick={() => changeLanguage('pt', 'Português', portugalFlag)}>
+      <Dropdown.Item
+        onClick={() => changeLanguage('pt', 'Português', portugalFlag)}
+        style={{ color: marineBlue }}
+      >
         <img
           src={portugalFlag}
           alt="Português"

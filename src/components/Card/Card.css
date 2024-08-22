@@ -1,0 +1,14 @@
+.hover-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .hover-card:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+  }
+  
+  .hover-card:active {
+    transform: scale(0.98); /* Efecto de clic */
+  }
+  

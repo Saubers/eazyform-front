@@ -1,0 +1,52 @@
+/* Dropdown Customization */
+.nav-dropdown-custom .dropdown-toggle {
+    color: #ECF0F1; /* boneWhite */
+  }
+  
+  .nav-dropdown-custom .dropdown-toggle::after {
+    color: #ECF0F1; /* boneWhite for the dropdown arrow */
+  }
+  
+  .nav-dropdown-custom .dropdown-menu {
+    background-color: #2C3E50; /* marineBlue */
+  }
+  
+  .nav-dropdown-custom .dropdown-item {
+    color: #ECF0F1; /* boneWhite */
+  }
+  
+  .nav-dropdown-custom .dropdown-item:hover {
+    background-color: #1ABC9C; /* mintGreen */
+    color: #ECF0F1; /* boneWhite */
+  }
+  
+  /* General Nav Link Hover Effect */
+  .nav-link {
+    border-radius: 10px;
+    color: #ECF0F1; /* boneWhite */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    border-radius: 10px;
+
+    background-color: #1ABC9C; /* mintGreen */
+    color: #ECF0F1; /* boneWhite */
+  }
+  
+  /* Button Hover Effect */
+  .btn-outline-light {
+    border-radius: 10px;
+    background-color: #1ABC9C; /* mintGreen for hover */
+    color: #ECF0F1; /* boneWhite */
+    border-color: #1ABC9C;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-outline-light:hover {
+    border-radius: 10px;
+    background-color: #ECF0F1; /* boneWhite */
+    color: #1ABC9C; /* mintGreen */
+    border-color: #1ABC9C;
+  }
+  

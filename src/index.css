@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #2C3E50; /* Azul marino para texto principal */
+  background-color: #ECF0F1; /* Fondo blanco hueso */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +15,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #1ABC9C; /* Verde menta para enlaces */
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #16a085; /* Color más oscuro para el hover en enlaces */
 }
 
 body {
@@ -28,11 +28,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #ECF0F1; /* Fondo claro */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #2C3E50; /* Azul marino para títulos */
 }
 
 button {
@@ -42,12 +44,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #7F8C8D; /* Gris oscuro para botones */
+  color: #ECF0F1; /* Texto claro en botones */
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #1ABC9C; /* Verde menta en hover */
 }
 button:focus,
 button:focus-visible {
@@ -56,13 +59,14 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #2C3E50; /* Texto principal en azul marino */
+    background-color: #ffffff; /* Fondo blanco puro para el modo claro */
   }
   a:hover {
-    color: #747bff;
+    color: #16a085; /* Verde más oscuro en hover para enlaces */
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #BDC3C7; /* Gris claro para los botones en modo claro */
+    color: #2C3E50; /* Azul marino para el texto de los botones en modo claro */
   }
 }

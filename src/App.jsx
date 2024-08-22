@@ -3,6 +3,8 @@ import './App.css'
 import Home from './components/Home'
 import PricingPage from './components/Pricing';
 import Login from './components/Login';
+import Register from './components/Register';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -11,8 +13,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/pricing" element={<PricingPage />} />
       </Routes>
+<Footer />
+
     </div>
   );
 }
