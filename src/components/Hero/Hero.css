@@ -1,0 +1,80 @@
+/* Hero section initial styling */
+.hero-section {
+    margin-top: 70px;
+    background-color: #ECF0F1;
+    color: #2C3E50;
+  }
+  
+  /* Fade-in animation for the entire section */
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  /* Fade-in and slide-down for the title and description */
+  .fade-in-down {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+  }
+  
+  /* Fade-in and slide-up for the button */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+
+button {
+    background-color: #1ABC9C; /* Verde menta */
+    border-color: #1ABC9C;
+    color: #ECF0F1; /* Blanco hueso */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #16a085; /* Verde menta más oscuro */
+    border-color: #16a085; /* Oscurecer el borde también */
+    color: #ffffff; /* Asegurarse de que el texto siga siendo claro */
+    transform: scale(1.05); /* Agrandar ligeramente el botón */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+  }
+  
+  button:focus {
+    outline: none; /* Eliminar el borde por defecto de foco */
+    box-shadow: 0 8px 15px rgba(26, 188, 156, 0.5); /* Sombra en foco */
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

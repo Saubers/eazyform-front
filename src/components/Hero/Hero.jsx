@@ -1,26 +1,21 @@
 import { Container, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import './Hero.css'; // Importa el archivo de estilos CSS para las animaciones
 
 const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div
-      className="hero-section text-center py-5"
-      style={{
-        marginTop: "70px",
-        backgroundColor: "#ECF0F1", // Fondo claro
-        color: "#2C3E50", // Texto principal en azul marino
-      }}
-    >
+    <div className="hero-section text-center py-5 fade-in">
       <Container>
-        <h1 style={{ color: "#2C3E50" }}>{t('hero.title')}</h1>
-        <p className="lead" style={{ color: "#7F8C8D" }}>
+        <h1 className="fade-in-down">{t('hero.title')}</h1>
+        <p className="lead fade-in-down">
           {t('hero.description')}
         </p>
         <Button
           variant="primary"
           size="lg"
+          className="fade-in-up"
           style={{
             backgroundColor: "#1ABC9C", // Color del botón
             borderColor: "#1ABC9C", // Borde del botón

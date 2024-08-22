@@ -9,7 +9,6 @@ import { boneWhite, marineBlue, mintGreen } from '../constants/colors';
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
 
-  // Track the current selected language
   const [currentLanguage, setCurrentLanguage] = useState({
     code: 'en',
     label: 'English',
@@ -36,7 +35,7 @@ const LanguageSelector = () => {
           {currentLanguage.label}
         </span>
       }
-      variant="outline-dark"
+      variant="outline"
       style={{
         borderRadius: '10px',
         backgroundColor: mintGreen,

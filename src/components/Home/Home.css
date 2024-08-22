@@ -1,0 +1,53 @@
+/* General Fade-In for sections */
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  /* Title animation - fade in and down */
+  .fade-in-down {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+  }
+  
+  /* Card animation - fade in and up */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  /* Keyframes for fade-in effects */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
