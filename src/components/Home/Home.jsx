@@ -4,8 +4,16 @@ import PersonalizedCard from '../Card/Card';
 import PersonalizedNavbar from '../Navbar/Navbar';
 import Hero from '../Hero/Hero';
 import { darkGray, marineBlue } from '../../constants/colors';
+import { useNavigate } from 'react-router-dom'; // Para redirigir al chat
+import Footer from '../Footer';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const navigateToChat = (service) => {
+    navigate(`/tool/${service}`);
+  };
+
   return (
     <>
       <PersonalizedNavbar />
@@ -25,6 +33,7 @@ const Home = () => {
                 backgroundColor: darkGray, // Fondo de la tarjeta
                 color: marineBlue, // Texto principal
               }}
+              onClick={() => navigateToChat('data-analysis')}
             />
           </Col>
           <Col md={4} className="fade-in-up">
@@ -35,6 +44,7 @@ const Home = () => {
                 backgroundColor: darkGray,
                 color: marineBlue,
               }}
+              onClick={() => navigateToChat('dashboard-customization')} // Navegar a otro servicio
             />
           </Col>
           <Col md={4} className="fade-in-up">
@@ -45,9 +55,11 @@ const Home = () => {
                 backgroundColor: darkGray,
                 color: marineBlue,
               }}
+              onClick={() => navigateToChat('ai-predictions')} 
             />
           </Col>
         </Row>
+        <Footer />
       </Container>
     </>
   );

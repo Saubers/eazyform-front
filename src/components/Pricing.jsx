@@ -55,13 +55,13 @@ const PricingPage = () => {
   ];
 
   return (
-    <Container className="py-5" style={{ backgroundColor: boneWhite }}>
+    <Container className="py-5">
       <PersonalizedNavbar />
       <h1 className="text-center mb-5" style={{ color: marineBlue }}>Pricing</h1>
       <Row>
         {pricingPlans.map((plan, idx) => (
           <Col key={idx} md={6} lg={3} className="mb-4">
-            <Card className="h-100 shadow-sm" style={{ borderRadius: 15, backgroundColor: darkGray, color: boneWhite }}>
+            <Card className="h-100 shadow-sm" style={{ borderRadius: 15, backgroundColor: marineBlue, color: boneWhite }}>
               <Card.Body className="d-flex flex-column">
                 <Card.Title className="text-center" style={{ color: mintGreen }}>{plan.name}</Card.Title>
                 <Card.Subtitle className="text-center mb-3" style={{ color: boneWhite }}>{plan.price}</Card.Subtitle>

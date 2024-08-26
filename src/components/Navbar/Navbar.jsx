@@ -18,7 +18,7 @@ const PersonalizedNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <NavDropdown title={t('navbar.tools')} id="tools-dropdown" className="nav-dropdown-custom">
-              <NavDropdown.Item href="/tool1">{t('tools.tool1')}</NavDropdown.Item>
+              <NavDropdown.Item href="/tool">{t('tools.tool1')}</NavDropdown.Item>
               <NavDropdown.Item href="/tool2">{t('tools.tool2')}</NavDropdown.Item>
               <NavDropdown.Item href="/tool3">{t('tools.tool3')}</NavDropdown.Item>
               <NavDropdown.Divider />
